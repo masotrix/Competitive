@@ -19,7 +19,13 @@ vector<int> bigKaratsuba( vector<int> a, vector<int> b );
 
 // Function Definitions
 
-/*-> bigNew <-*/
+
+/**
+ * Create new BigInt
+ *
+ * @param n     initial value
+ * @return      new BigInt
+ */
 vector<int> bigNew( int n ){
 
     vector<int> c;

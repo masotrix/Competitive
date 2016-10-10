@@ -37,7 +37,7 @@ bool inc(vector<int>& v){
 
                     swap(v[j], v[i]);
                     insertionSort(v, i);
-                    //v.sort()
+                    //sort(v.begin(), v.begin()+i, greater<int>());
                     
                     return true;
                 }
@@ -91,9 +91,10 @@ int main(){
         
         } while (inc(vi));
 
-        if(!b) puts("-1");
-
-        time(begin);
+        if(!b){
+            puts("-1");
+            time(begin);
+        }
     
     }
 
